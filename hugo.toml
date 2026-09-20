@@ -1,5 +1,5 @@
 baseURL = "https://dangminh2011.github.io/myblog/"
-canonifyURLs = true   
+relativeURLs = true  
 languageCode = "vi"
 defaultContentLanguage = "vi"
 title = "Dawng's site"

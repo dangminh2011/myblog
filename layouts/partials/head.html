@@ -4,6 +4,6 @@
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <link rel="icon" href="{{ "favicon.ico" | relURL }}">
 {{ $css := resources.Get "css/style.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+<link rel="stylesheet" href="{{ $css.Permalink }}">
 {{ $js := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
-<script defer src="{{ $js.RelPermalink }}"></script>
+<script defer src="{{ $js.Permalink }}"></script>

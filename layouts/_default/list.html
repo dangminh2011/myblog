@@ -1,0 +1,12 @@
+{{ define "main" }}
+<h1 class="h"><span class="hash">#</span> {{ .Title }}</h1>
+{{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+{{ if eq .Section "ctf-writeups" }}<div id="tags" class="tags"></div>{{ end }}
+{{ range .Pages }}
+<article data-tags="{{ with .Params.tags }}{{ delimit . " " }}{{ end }}">
+  <h2 class="h"><span class="hash">#</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p>{{ site.Params.author }}, {{ .Date.Format "02/01/2006" }}</p>
+  <p class="sum">{{ .Summary | plainify }}</p>
+</article>
+{{ end }}
+{{ end }}

@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article>
+  <h1 class="h"><span class="hash">#</span> {{ .Title }}</h1>
+  {{ if not .Date.IsZero }}<p class="dim">{{ .Date.Format "02/01/2006" }}
+    {{- range .GetTerms "tags" }} <a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}</p>{{ end }}
+  <div class="prose">{{ .Content }}</div>
+</article>
+{{ end }}

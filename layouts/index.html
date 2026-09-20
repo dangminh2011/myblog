@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h1 class="h"><span class="hash">#</span> Bài viết mới</h1>
+{{ range first 10 (where site.RegularPages "Section" "in" (slice "blog" "ctf-writeups" "life")) }}
+<article>
+  <h2 class="h"><span class="hash">#</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p>{{ site.Params.author }}, {{ .Date.Format "02/01/2006" }}</p>
+  <p class="sum">{{ .Summary | plainify }}</p>
+</article>
+{{ end }}
+{{ end }}

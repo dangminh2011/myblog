@@ -1,0 +1,44 @@
+baseURL = "https://github.com/dangminh2011/myblog.io/"   # đổi USERNAME thành tên GitHub của bạn
+languageCode = "vi"
+defaultContentLanguage = "vi"
+title = "Dawng's site"
+enableRobotsTXT = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+[markup.highlight]
+  style = "dracula"
+
+[params]
+  author = "Dawng"
+  avatar = "minischool.png"   # ảnh tròn ở sidebar: thay file static/avatar.jpg
+  bio = "First-year Information Security student at PTIT"
+  tagline = "If you see someone better than me, please close your eyes!"
+  description = "Trang cá nhân"
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/dangminh2011"
+  [[params.social]]
+    name = "email"
+    url = "mailto:dangntmhe210550@gmail.com"
+
+[[menus.main]]
+  name = "about"
+  pageRef = "/about"
+  weight = 1
+[[menus.main]]
+  name = "blog"
+  pageRef = "/blog"
+  weight = 2
+[[menus.main]]
+  name = "ctf-writeups"
+  pageRef = "/ctf-writeups"
+  weight = 3
+[[menus.main]]
+  name = "life"
+  pageRef = "/life"
+  weight = 4
+[[menus.main]]
+  name = "cv"
+  pageRef = "/cv"
+  weight = 5

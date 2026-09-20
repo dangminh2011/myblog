@@ -1,0 +1,8 @@
+{{ define "main" }}
+<h1 class="h"><span class="hash">#</span> {{ .Title }}</h1>
+<div class="cv-head">
+  {{ with .Resources.GetMatch "avatar.jpg" }}<img class="avatar" src="{{ .RelPermalink }}" alt="Ảnh đại diện">{{ end }}
+  {{ with .Resources.GetMatch "*.pdf" }}<a class="btn" href="{{ .RelPermalink }}" download>[ tải CV (PDF) ]</a>{{ end }}
+</div>
+<div class="prose">{{ .Content }}</div>
+{{ end }}

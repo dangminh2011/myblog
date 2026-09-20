@@ -1,4 +1,5 @@
-baseURL = "https://dangminh2011.github.io/myblog/"   # đổi USERNAME thành tên GitHub của bạn
+baseURL = "https://dangminh2011.github.io/myblog/"
+canonifyURLs = true   
 languageCode = "vi"
 defaultContentLanguage = "vi"
 title = "Dawng's site"

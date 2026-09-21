@@ -20,7 +20,7 @@ ip của server pickle rick là 10.49.167.229
 
 1. Reconnaissance
 
-mình sẽ bắt đầu bằng việc scan tcp và udp cùng với version của bài này
+mình sẽ bắt đầu bằng việc scan tcp và udp cùng với version của bài này.
 
 1A.SCAN TCP port
 

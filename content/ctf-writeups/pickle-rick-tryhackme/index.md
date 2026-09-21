@@ -23,9 +23,9 @@ ip của server pickle rick là 10.49.167.229
 mình sẽ bắt đầu bằng việc scan tcp và udp cùng với version của bài này.
 
 1A.SCAN TCP port
-
+```
 sudo nmap -vv -Pn -T4 -p- -oN TCP-port-scan 10.49.167.229
-
+```
 mình sử dụng nmap với :
 
 - -vv là hiện quá trình scan ra ngoài màn hình
@@ -38,14 +38,14 @@ mình sử dụng nmap với :
 
 mình quét và thấy server mở mỗi port 80(http) và 22(ssh)
 
-như vậy là maybe ta có thể ssh vào hoặc lấy reverse shell:))
+như vậy là maybe ta có thể ssh vào hoặc lấy reverse shell
 
 mình ssh admin@10.49.167.229 nma không đc
 
 1B.SCAN UDP port
-
+```
 sudo nmap -vv -Pn -T4 -sU -oN -UDP-port-scan 10.49.167.229
-
+```
 trong đó:
 
 - -vv là hiện quá trình scan ra ngoài màn hình
@@ -57,9 +57,9 @@ trong đó:
 udp gần như là no response full nên có vẻ mình ko thể lấy được gì hữu dụng từ đây
 
 1C.SCAN version 
-
+```
 sudo nmap -vv -Pn -T4 -sV  -p 22,80 -O 10.49.167.229
-
+```
 Trong đó:
 
 - - sV : version

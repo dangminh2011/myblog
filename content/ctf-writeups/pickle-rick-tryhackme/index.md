@@ -1,7 +1,7 @@
 ---
 title: "Pickle Rick Tryhackme"
 date: 2026-09-21T12:59:55+07:00
-draft: true
+draft: false
 tags: ["web"]
 ---
 # Pickle Rick

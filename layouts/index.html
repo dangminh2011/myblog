@@ -3,8 +3,8 @@
 {{ range first 10 (where site.RegularPages "Section" "in" (slice "blog" "ctf-writeups" "life")) }}
 <article>
   <h2 class="h"><span class="hash">#</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <p>{{ site.Params.author }}, {{ .Date.Format "02/01/2006" }}</p>
-  <p class="sum">{{ .Summary | plainify }}</p>
+  <p>{{ site.Params.author }}, {{ .Date.Format "02/01/2006 15:04" }}</p>
+
 </article>
 {{ end }}
 {{ end }}

@@ -3,6 +3,7 @@ languageCode = "vi"
 defaultContentLanguage = "vi"
 title = "Dawng's site"
 enableRobotsTXT = true
+timeZone = "Asia/Ho_Chi_Minh"
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -42,3 +43,4 @@ enableRobotsTXT = true
   name = "cv"
   pageRef = "/cv"
   weight = 5
+

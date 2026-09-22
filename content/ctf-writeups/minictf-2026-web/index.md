@@ -194,7 +194,7 @@ quan sát history của burpsuite mình đã tìm được dẫn để idor:
 ```
 /api/orders/10239
 ```
-do gợi ý của burpsuite chỉ là 1021x nên mình chỉ cần bruteforce từ 1 đến 9 thay cho x là đã tìm được kqua
+do gợi ý của robots.txt chỉ là 1021x nên mình chỉ cần bruteforce từ 1 đến 9 thay cho x là đã tìm được kqua
 ![alt text](image-23.png)
 
 hẹ hẹ, vậy là ta đã có token của shopee ops

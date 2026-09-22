@@ -2,7 +2,7 @@
 title: "Pickle Rick Tryhackme"
 date: 2026-09-21T12:59:55+07:00
 draft: false
-tags: ["web"]
+tags: ["web", "tryhackme"]
 ---
 # Pickle Rick
 

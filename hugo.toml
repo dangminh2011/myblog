@@ -12,9 +12,9 @@ timeZone = "Asia/Ho_Chi_Minh"
 
 [params]
   author = "Dawng"
-  avatar = "minischool.png"   # ảnh tròn ở sidebar: thay file static/avatar.jpg
-  bio = "Em à, cái chuyện đó..."
-  tagline = "If you see someone better than me, please close your eyes!"
+  avatar = "buitien.png"   # ảnh tròn ở sidebar: thay file static/avatar.jpg
+  bio = "裴钱"
+  tagline = "Baby kajima!!"
   description = "Trang cá nhân"
   [[params.social]]
     name = "github"
